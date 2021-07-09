@@ -14,7 +14,7 @@ class Person
     end
 end
 
-class Student
+class Student < Person
     def talk
         puts "Aquí es la clase de programación con Ruby?"
     end
@@ -23,28 +23,25 @@ class Student
     end
 end
 
-class Teacher
+class Teacher < Person
     def talk
-    
+        puts "Bienvenidos a la clase de programación con Ruby!"
     end
     def introduce
-    
+        puts "Hola alumnos. Mi nombre es #{@first_name} #{@last_name}."
     end
 end
 
-class Parent
+class Parent < Person
     def talk
-    
+        puts "Aquí es la reunión de apoderados?"
     end
     def introduce
-    
+        puts "Hola. Soy uno de los apoderados. Mi nombre es #{@first_name} #{@last_name}."
     end
 end
 
-
-
-
-
+#original code
 =begin
 class Person
     def initialize(first, last, age, type)
@@ -71,8 +68,7 @@ class Person
         elsif @type == "Teacher"
             puts "Hola alumnos. Mi nombre es #{@first_name} #{@last_name}."
         elsif @type == "Parent"
-            puts "Hola. Soy uno de los apoderados. Mi nombre es #{@first_name} #
-        {@last_name}."
+            puts "Hola. Soy uno de los apoderados. Mi nombre es #{@first_name} #{@last_name}."
         end
     end
 end
