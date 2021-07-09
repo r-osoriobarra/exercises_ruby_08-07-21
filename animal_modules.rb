@@ -33,4 +33,9 @@ module Alimentacion
             'Puedo comer carne!'
         end
     end
+    module Omnivoro
+        def comer
+            'Puedo comer lo que sea!'
+        end
+    end
 end
