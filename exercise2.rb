@@ -4,7 +4,7 @@ require_relative 'animal_modules.rb'
 
 class Animal
     attr_reader :name
-    def introduce(name)
+    def initialize(name)
         @name = name
     end
 end
@@ -50,6 +50,6 @@ class Mariposa < Insecto
     include Habilidades::Volador, Alimentacion::Herbivoro
 end
 
-class Abejo < Insecto
+class Abeja < Insecto
     include Habilidades::Volador, Alimentacion::Herbivoro
 end
