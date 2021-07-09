@@ -27,22 +27,29 @@ class Paloma < Ave
 end
 
 class Pato < Ave
+    include Habilidades::Volador, Habilidades::Caminante, Habilidades::Nadador, Alimentacion::Herbivoro
 end
 
 class Perro < Mamifero
+    include Habilidades::Caminante, Habilidades::Nadador, Alimentacion::Omnivoro
 end
 
 class Gato < Mamifero
+    include Habilidades::Caminante, Habilidades::Nadador, Alimentacion::Carnivoro
 end
 
 class Vaca < Mamifero
+    include Habilidades::Caminante, Alimentacion::Herbivoro
 end
 
 class Mosca < Insecto
+    include Habilidades::Volador, Alimentacion::Omnivoro
 end
 
 class Mariposa < Insecto
+    include Habilidades::Volador, Alimentacion::Herbivoro
 end
 
 class Abejo < Insecto
+    include Habilidades::Volador, Alimentacion::Herbivoro
 end
